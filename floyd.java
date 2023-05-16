@@ -1,5 +1,3 @@
-    // Java program for Floyd Warshall All Pairs Shortest
-// Path algorithm
 import java.util.*;
 public class floyd {
 
