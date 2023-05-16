@@ -9,13 +9,15 @@ public class grafo {
     
     public void leer(){
         try (BufferedReader br = new BufferedReader(new FileReader(
-            "C:/Users/jmper/OneDrive/Documentos/Segundo año UVG/1 semestre/Algortimos y estructura de datos/HDT6/cards_desc.txt"))) {
+            "logistica.txt"))) {
         String caracter;
-
+        
         while ((caracter = br.readLine()) != null) {
 
             String[] cadena = caracter.split("\\|");
-            mgeneral.put(cadena[0].trim(), cadena[1].trim());
+            for(int i=0; i<cadena.length;i++){
+                System.out.println(cadena[i]);
+            }
 
         }
 
