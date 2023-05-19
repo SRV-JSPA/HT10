@@ -6,6 +6,8 @@ import java.io.FileReader;
 import java.util.regex.*;
 
 public class grafo {
+
+    floyd f = new floyd();
     
     List<String> lista = new ArrayList<String>();
     public void leer(){
@@ -39,10 +41,15 @@ public class grafo {
                 int entero = Integer.parseInt(elemento);
                 vertices.add(entero);
             } catch (NumberFormatException e) {
-                nodos
+                nodos.add(elemento);
             }
         }
         System.out.println(nodos);
         System.out.println(vertices);
     }
+
+    public void creargrafo(){
+        
+    }
+
 }
