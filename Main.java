@@ -5,5 +5,6 @@ public class Main{
         grafo g = new grafo();
 
         g.leer();
+        g.separador();
     }
 }
