@@ -1,11 +1,11 @@
 import java.util.*;
 public class floyd {
 
-    public static int[][] shortestpath(int[][] adj, int[][] path) 
+    public static int[][] rutacorta(int[][] adj, int[][] path) 
     {
         int n = adj.length;
         int[][] ans = new int[n][n];
-        copy(ans, adj);
+        duplicar(ans, adj);
     	for (int k=0; k<n;k++) 
             for (int i=0; i<n; i++) 
         	for (int j=0; j<n;j++) 
@@ -15,7 +15,7 @@ public class floyd {
                     }
     	return ans;
     }
-    public static void copy(int[][] a, int[][] b) 
+    public static void duplicar(int[][] a, int[][] b) 
     {
         for (int i=0;i<a.length;i++)
             for (int j=0;j<a[0].length;j++)
